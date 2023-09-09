@@ -1,0 +1,1 @@
+# Koncepcja_DDD
