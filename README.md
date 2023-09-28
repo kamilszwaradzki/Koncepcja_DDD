@@ -42,3 +42,6 @@ Stan Agregatu i jego wewnętrznych obiektów można modyfikować tylko za pośre
 Agregat spełnia rolę granicy transakcji. Wszystkie jego dane, w tym wszystkie jego wewnętrzne obiekty, muszą być włączone do bazy danych jako jedna atomowa transakcja. Agregat może komunikować się z encjami zewnętrznymi poprzez publikowanie Zdarzeń Dziedziny - komunikatów opisujących ważne zdarzenia biznesowe w cyklu życia Agregatu. Inne komponenty moga subskrybować zdarzenia i używać ich do inicjowania wykonywania Logiki Biznesowej.
 
 >*Usługi Dziedziny* - Obiekty bezstanowe obsługujące Logikę Biznesową, która naturalnie nie należy do żadnego Agregatu, ani Obiektów Wartości Modelu Dziedziny.
+
+7) Rozdział Siódmy - Modelowanie wymiaru czasu
+>*Event Sourcing* - to podejście do projektowania i modelowania systemów informatycznych, w którym stan systemu jest reprezentowany jako sekwencja zdarzeń (eventów). Zamiast przechowywać tylko bieżący stan systemu, event sourcing gromadzi wszystkie zdarzenia, które wystąpiły w systemie w czasie. Te zdarzenia są trwałe i niezmienne, co oznacza, że raz dodane do systemu nie mogą być zmieniane ani usuwane.
